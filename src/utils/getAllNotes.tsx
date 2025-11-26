@@ -1,6 +1,6 @@
 import { NoteCard } from "../components"
 import { NotesContainer } from "../styles/styles"
-import { Note } from "../types/note"
+import type { Note } from "../types/note"
 
 const filteredNotes = (notes: Note[], filter: string) => {
 

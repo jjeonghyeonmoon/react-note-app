@@ -1,12 +1,12 @@
 import { RiInboxUnarchiveFill } from 'react-icons/ri';
 import { FaEdit, FaTrash, FaTrashRestore } from "react-icons/fa";
-import { Note } from "../types/note";
-import { Dispatch } from "@reduxjs/toolkit";
+import type { Note } from "../types/note";
+import type { AppDispatch } from "../store";
 import { toggleCreateNoteModal } from "../store/modal/modalSlice";
 import { deleteNote, restoreNote, setArchiveNotes, setEditNote, setTrashNotes, unArchiveNote } from "../store/notesList/notesListSlice";
 import { NotesIconBox } from '../styles/styles';
 
-const getRelevantBtns = (type: string, note: Note, dispatch: Dispatch) => {
+const getRelevantBtns = (type: string, note: Note, dispatch: AppDispatch) => {
 
     const clickHandler = () => {
         dispatch(toggleCreateNoteModal(true));

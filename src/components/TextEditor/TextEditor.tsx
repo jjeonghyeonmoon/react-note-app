@@ -2,6 +2,7 @@ import React from 'react'
 import ReactQuill from 'react-quill'
 import { Container } from './TextEditor.styles'
 import 'react-quill/dist/quill.snow.css';
+
 interface TextEditorProps {
   value: string,
   setValue: React.Dispatch<React.SetStateAction<string>>,

@@ -5,7 +5,7 @@ import { useAppDispatch, useAppSelector } from '../../../hooks/redux'
 import { toggleTagsModal } from '../../../store/modal/modalSlice';
 import { removeTags } from '../../../store/notesList/notesListSlice';
 import { addTags, deleteTags } from '../../../store/tags/tagsSlice';
-import { Tag } from '../../../types/tag';
+import type { Tag } from '../../../types/tag';
 import getStandardName from '../../../utils/getStandardName';
 import { DeleteBox, FixedContainer } from '../Modal.styles';
 import { Box, StyledInput, TagsBox } from './TagsModal.styles';

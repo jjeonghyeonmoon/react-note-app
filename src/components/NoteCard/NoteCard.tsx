@@ -1,8 +1,7 @@
-import React from 'react'
 import { NotesIconBox } from '../../styles/styles';
 import { Card, ContentBox, FooterBox, TagsBox, TopBox } from './NoteCard.styles';
 import { BsFillPinFill } from 'react-icons/bs';
-import { Note } from '../../types/note';
+import type { Note } from '../../types/note';
 import { useAppDispatch } from '../../hooks/redux';
 import getRelevantBtns from '../../utils/getRelevantBtns';
 import { readNote, setPinnedNotes } from '../../store/notesList/notesListSlice';
